@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expat Rental Services | Housing Updates</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Expat Rental Services logo" />
+
+    <h1>Sign up</h1>
+
+    <p class="disclaimer">⚠️ Please <strong>register for the housing updates that match your situation</strong>, so the offers you receive stay relevant.</p>
+
+    <section class="notes">
+      <p class="notes-title">Quick notes about how we work:</p>
+      <ul>
+        <li>We are a housing agency that represents tenants 100%.</li>
+        <li>We work on a no cure, no pay basis, so a fee is only charged upon successful placement.</li>
+        <li>Our fee is 1 month's rent + 21% VAT.</li>
+      </ul>
+    </section>
+
+    <section id="stepAgent" class="step">
+      <p class="step-title">Who is your contact?</p>
+      <div class="buttons">
+        <button class="agent-btn alex-btn" type="button" data-agent="alex">Alex</button>
+        <button class="agent-btn ers-btn" type="button" data-agent="ers">ERS</button>
+      </div>
+    </section>
+
+    <section id="stepType" class="step hidden">
+      <p class="step-title">What describes you best?</p>
+      <p id="selectedAgent" class="step-context"></p>
+      <div class="buttons">
+        <button class="student-btn" type="button" data-type="student">I am a student</button>
+        <button class="working-btn" type="button" data-type="working">I am a working professional</button>
+      </div>
+      <button class="text-btn" type="button" data-action="back-agent">← Change contact</button>
+    </section>
+
+    <section id="stepLinks" class="step hidden">
+      <p class="step-title">Join your WhatsApp group</p>
+      <p id="selectedType" class="step-context"></p>
+      <div id="linkList" class="links visible"></div>
+      <button class="text-btn" type="button" data-action="back-type">← Change category</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
